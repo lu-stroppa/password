@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Random Password Generator - by: Lxksz.</title>
+</head>
+<body>
+    <div id="container">
+        <img src="src/img/lock.svg" id="password-img" alt="">
+        <h1 id="title">GERADOR DE SENHAS</h1>
+
+        <div id="password-container">
+            <span id="password"></span>
+            <button id="copy">
+                <i class="fa-solid fa-copy"></i>
+            </button>
+        </div>
+
+        <div id="password-items">
+            <div class="item">
+                <label for="size-select">Quantidade de caracteres:</label>
+                <select id="size-select">
+                    <option value="4">4</option>
+                    <option value="8">8</option>
+                    <option value="12" selected>12</option>
+                    <option value="16">16</option>
+                    <option value="20">20</option>
+                    <option value="24">24</option>
+                    <option value="32">32</option>
+                    <option value="48">48</option>
+                    <option value="64">64</option>
+                    <option value="80">80</option>
+                    <option value="96">96</option>
+                    <option value="112">112</option>
+                    <option value="128">128</option>
+                </select>
+            </div>
+
+
+
+            <div class="item">
+                <input type="checkbox" name="include-uppercase" id="include-uppercase">
+                <label for="include-uppercase">
+                    Incluir letra maiúscula.
+                </label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" name="include-lowercase" id="include-lowercase">
+                <label for="include-lowercase">
+                    Incluir letra minúscula.
+                </label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" name="include-number" id="include-number">
+                <label for="include-number">
+                    Incluir número.
+                </label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" name="include-special-character" id="include-special-character">
+                <label for="include-especial-character">
+                    Incluir caractere especial.
+                </label>
+            </div>
+
+            <button id="generate">GERAR SENHA</button>
+        </div>
+    </div>
+
+    <footer>
+    <p>Feito por Lxksz.</p>
+    <div class="footer-links">
+        <a href="https://github.com/lu-stroppa" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <i class="fa-regular fa-snowflake"></i>
+        <a href="https://www.linkedin.com/in/lucas-stroppa1210" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</footer>
+
+
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="src/script.js"></script>
+</body>
+</html>
